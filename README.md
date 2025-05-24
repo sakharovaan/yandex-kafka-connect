@@ -102,7 +102,7 @@ INSERT INTO orders (user_id, product_name, quantity) VALUES (4, 'Product E', 4);
 
 {"topic": "customers.public.users", "partition": 0, "offset": 7, "key": {"id": 8}, "message": {"id": 8, "name": "Bob Brown", "email": "bob@example.com", "created_at": 1748096784909830, "__deleted": "false"}, "timestamp": 1748096785414}
 
-c{"topic": "customers.public.orders", "partition": 0, "offset": 8, "key": {"id": 9}, "message": {"id": 9, "user_id": 3, "product_name": "Product D", "quantity": 3, "order_date": 1748096784915860, "__deleted": "false"}, "timestamp": 1748096785416}
+{"topic": "customers.public.orders", "partition": 0, "offset": 8, "key": {"id": 9}, "message": {"id": 9, "user_id": 3, "product_name": "Product D", "quantity": 3, "order_date": 1748096784915860, "__deleted": "false"}, "timestamp": 1748096785416}
 
 {"topic": "customers.public.orders", "partition": 0, "offset": 9, "key": {"id": 10}, "message": {"id": 10, "user_id": 4, "product_name": "Product E", "quantity": 4, "order_date": 1748096784917048, "__deleted": "false"}, "timestamp": 1748096785416}
 ```
