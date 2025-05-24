@@ -6,7 +6,6 @@ from aiokafka.structs import ConsumerRecord
 from confluent_kafka.schema_registry.avro import AvroDeserializer, SerializationContext
 
 from src.config import KafkaConfig
-from src.consumer.schemas import Message
 
 
 async def process_message(app: FastAPI, config: KafkaConfig, msg: ConsumerRecord, topic: str):

@@ -9,6 +9,14 @@
 * Prometeus периодически считывает метрики Kafka Connect и записывает в свою базу данных
 * Grafana подключается к Prometeus и отображает метрики в дашбордах
 
+Каталоги проекта:
+* confluent-hub-components - файлы плагина debezium для kafka connect
+* consumer - реализованный на Python консьюмер, архитектура соответствует [Практической работе 2](https://github.com/sakharovaan/yandex-kafka?tab=readme-ov-file), но модифицированной для чтения из двух топиков
+* grafana - Dockerfile и конфигурация для Grafana для её автонастройки
+* kafka-connect - Dockerfile и конфигурация JMX для отдачи метрик
+* postgres - конфигурация Postgres для записи WAL в один поток
+* prometheus - конфигурация Prometheus для сбора метрик с kafka-connect
+
 ## Настройки Debezium Connector
 
 Настройки хранятся в файле connector.json и применяются через REST API Kafka Connect. Они следующие:
